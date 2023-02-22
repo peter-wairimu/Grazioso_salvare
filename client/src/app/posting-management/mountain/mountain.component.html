@@ -1,0 +1,23 @@
+<div class="d-flex  flex-wrap">
+
+    <div *ngFor="let recordinstance of response ; let i = index" class="card me-4 mb-3" style="width: 22rem;">
+      <img [src]="url+recordinstance.image" class="card-img-top" alt="...">
+      <div class="card-body">
+        
+        <h5 class="card-title"><span class="text-bold">Breed: </span> {{recordinstance.breed}}</h5>
+        <p class="card-text"><span class="text-bold">Rescue_type:</span> {{recordinstance.rescue_type}}</p>
+  
+        <div class="d-flex justify-content-around">
+          <p class="card-text"><span class="text-bold">Name:</span> {{recordinstance.name}}</p>
+          <p class="card-text"><span class="text-bold">Age:</span> {{recordinstance.age}}</p>
+        </div>
+        <div class="d-flex justify-content-around">
+          <p class="card-text"><span class="text-bold">Shelter:</span> {{recordinstance.shelter}}</p>
+          <p class="card-text"> <span class="text-bold">Location:</span>  {{recordinstance.location}}</p>
+         
+        </div>
+      
+      </div>
+    </div>
+   
+  </div>

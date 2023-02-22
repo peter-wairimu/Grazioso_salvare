@@ -1,0 +1,40 @@
+<!--sidebar-->
+<c-sidebar
+   style="background-color: rgb(255, 255, 255);"
+  #sidebar="cSidebar"
+  class="d-print-none sidebar sidebar-fixed"
+  id="sidebar"
+  visible
+>
+  <c-sidebar-brand
+  style="background-color: rgb(255, 255, 255);height:86px;"
+  >
+  </c-sidebar-brand>
+    <perfect-scrollbar [config]="perfectScrollbarConfig">
+  <!--  [perfectScrollbar]="perfectScrollbarConfig"-->
+  <c-sidebar-nav
+  >
+  <app-common-sidebar></app-common-sidebar>
+  </c-sidebar-nav>
+    </perfect-scrollbar>
+  <!-- <c-sidebar-toggler
+    *ngIf="!sidebar.narrow"
+    toggle="unfoldable"
+    cSidebarToggle="sidebar"
+  ></c-sidebar-toggler> -->
+</c-sidebar>
+
+<!--main-->
+<div class="wrapper d-flex flex-column min-vh-100 dark:bg-transparent" style="background-color: #F4EFEC;">
+  <!--app-header-->
+  <app-default-header style="background-color: #c9154d; height:86px;" class="mb-4 d-print-none header header-sticky" position="sticky" sidebarId="sidebar"></app-default-header>
+  <!--app-body-->
+  <div class="body flex-grow-1 px-3">
+    <div breakpoint="lg" class="h-auto container" >
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <!--app footer-->
+  <!-- <app-default-footer></app-default-footer> -->
+  <app-common-loader></app-common-loader> 
+</div>

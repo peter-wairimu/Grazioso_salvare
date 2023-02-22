@@ -1,0 +1,50 @@
+/* .nav-title{
+    font-size: .9rem;
+    font-weight: 700;
+    color:#e4e7ea;
+    text-transform: uppercase;
+    padding: 0.75rem 1rem;
+} */
+*{
+    font-family: Arial;
+}
+.nav-link{
+    color: black;
+}
+.title{
+    color: black;
+}
+.nav-icon{
+    font-weight: 10px;
+    font-size: 14px;
+}
+li > a.active {
+    color: black !important;
+    background-color: #F5F5f5;
+  }
+.hover:hover{
+    background-color: #F5F5f5;
+    color: black;
+}  
+
+  li{
+    border-bottom:01px solid rgb(218, 203, 203);
+  }
+.adi{
+    color: black;
+    font-size: 3rem;
+    font-weight: 700;
+}  
+
+.log{
+    border-bottom:01px solid rgb(218, 203, 203);
+    height:200px;
+}
+.platform{
+    font-size: 1rem;
+    line-height:1.3rem;
+}
+.polygon{
+    height:300px;
+    padding-left: 2.5rem;
+}
